@@ -8,29 +8,29 @@ void print_seperator_line(){
 }
 
 void print_size(){
-	printf("sizeof(int)=%i\n", sizeof(int));
-	printf("sizeof(char)=%i\n", sizeof(char));
-	printf("sizeof(short)=%i\n", sizeof(short));
-	printf("sizeof(long)=%i\n", sizeof(long));
-	printf("sizeof(float)=%i\n", sizeof(float));
-	printf("sizeof(double)=%i\n", sizeof(double));
+	printf("sizeof(int)=%lu\n", sizeof(int));
+	printf("sizeof(char)=%lu\n", sizeof(char));
+	printf("sizeof(short)=%lu\n", sizeof(short));
+	printf("sizeof(long)=%lu\n", sizeof(long));
+	printf("sizeof(float)=%lu\n", sizeof(float));
+	printf("sizeof(double)=%lu\n", sizeof(double));
     print_seperator_line();
 
 	int fib[10];
 	printf("%s\n", "int fib[10];");
-	printf("sizeof(fib)=%i\n", sizeof(fib));
-	printf("sizeof(*fib)=%i\n", sizeof(*fib));
+	printf("sizeof(fib)=%lu\n", sizeof(fib));
+	printf("sizeof(*fib)=%lu\n", sizeof(*fib));
 	print_seperator_line();
 
 	int *ptr_int = NULL;
 	printf("%s\n", "int *ptr_int = NULL;");
-	printf("sizeof(ptr_int)=%i\n", sizeof(ptr_int));
-	printf("sizeof(*ptr_int)=%i\n\n", sizeof(*ptr_int));
+	printf("sizeof(ptr_int)=%lu\n", sizeof(ptr_int));
+	printf("sizeof(*ptr_int)=%lu\n\n", sizeof(*ptr_int));
 
 	char *ptr_char = NULL;
 	printf("%s\n", "int *ptr_char = NULL;");
-	printf("sizeof(ptr_char)=%i\n", sizeof(ptr_char));
-	printf("sizeof(*ptr_char)=%i\n\n", sizeof(*ptr_char));
+	printf("sizeof(ptr_char)=%lu\n", sizeof(ptr_char));
+	printf("sizeof(*ptr_char)=%lu\n\n", sizeof(*ptr_char));
 	print_seperator_line();
 }
 

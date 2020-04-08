@@ -61,3 +61,11 @@ dive in c programming.
     - -O3 比 -O2 更进一步优化，包括 inline 函数。
     - -x language filename。
 
+## Clang 常用指令
+* 查看编译的步骤 : `clang -ccc-print-phases main.c`
+* 查看编译结果 : `clang -rewrite-objc main.c`
+* 查看操作内部命令 : `clang -### main.c -o main`
+* 想看清clang的全部过程 : `clang -E main.c`
+* 生成汇编 : `clang -S -fobjc-arc main.c -o main.s`
+* 生成目标文件 : `clang -fmodules -c main.c -o main.o`
+* 一步到位 : `clang main.o -o main`
